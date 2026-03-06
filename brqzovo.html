@@ -1,0 +1,789 @@
+<html lang="bg">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Къщи за гости — Рибарица</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="topbar" aria-label="Навигация">
+    <nav class="nav" aria-label="Основно меню">
+
+
+      <a class="nav__logo" href="index.html" aria-label="Къщи за гости Рибарица">
+        <div class="brand-title">КЪЩИ ЗА ГОСТИ </div>
+        <div class="brand-sub">БЕЛИ ВИТ • ГЕРГАНА • БРЯЗОВО </div>
+      </a>
+      
+      <button class="nav__toggle" type="button" aria-label="Отвори меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__links" id="navLinks">
+        <a class="nav__link" href="index.html">НАЧАЛО</a>
+
+        <!-- ✅ CHANGED: links to separate pages -->
+        <a class="nav__link" href="beli-vit.html">БЕЛИ ВИТ</a>
+        <a class="nav__link" href="brqzovo.html">БРЯЗОВО</a>
+        <a class="nav__link" href="gergana.html">ГЕРГАНА</a>
+        <a class="nav__link" href="index.html#location">ЛОКАЦИЯ</a>
+        <a class="nav__link" href="index.html#kontakti">КОНТАКТИ</a>
+        <a class="nav__link nav__link--cta" href="index.html#rezervirai">РЕЗЕРВИРАЙ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <!-- HERO -->
+    <section class="hero" id="nachalo" aria-label="Начална секция">
+      <span id="topSentinel" aria-hidden="true"></span>
+      <div class="hero__inner1">
+        <div class="brand">
+          <div class="brand__mark" aria-hidden="true">
+            <svg width="160" height="52" viewBox="0 0 200 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 55 L70 20 L100 45 L130 18 L185 55" stroke="#1f2328" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M86 37 L94 28" stroke="#1f2328" stroke-width="4" stroke-linecap="round"/>
+              <path d="M126 28 L140 40" stroke="#1f2328" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+          </div>
+
+          <h1 class="brand__title">
+            <span class="brand__title-main">Къща за гости</span>
+            <span class="brand__title-sub">БРЯЗОВО</span>
+          </h1>
+        </div>
+
+        <div class="hero__villaPhoto" aria-hidden="true">
+          <img src="img/bryazovo/bryazovo-kushta-za-gosti.webp" alt="Вила Гергана">
+        </div>
+
+        <p class="hero__text">
+            Комфорт и пространство за до 15 гости <br>
+            С. Рибарица, общ. Тетевен. 
+        </p>
+        
+      </div>
+    
+
+      
+      <div class="hero__fade1" aria-hidden="true"></div>
+
+      <a class="btn hero__btn" href="#gallery">Виж галерия</a>
+    </section>
+    
+
+    <section class="section section-exp1" id="amenities" aria-label="Удобства на Вила Брязово">
+        <div class="container">
+      
+        <!--  <header class="section-head">
+            <p class="eyebrow">УДОБСТВА</p>
+            <h2 class="section-title">Вила Брязово — BBQ, басейн, джакузи и още</h2>
+            <p class="section-sub">
+              Натисни “Виж детайли” и ще видиш информация и снимки за удобствата на Вила Брязово.
+            </p>
+          </header>-->
+      
+          <!-- Cinematic Grid (само Брязово) -->
+          <div class="exp-grid" aria-label="Категории удобства - Брязово">
+      
+            <a class="exp-card is-active" href="#amen-bbq" data-exp-card="bbq"
+               style="--bg:url('img/bryazovo/brqzovo-meze-kamina.webp')">
+              <div class="exp-card__overlay"></div>
+              <div class="exp-card__content">
+                <div class="exp-card__kicker">ВЕЧЕРИ НА ЖАР</div>
+                <h3 class="exp-card__title">BBQ + лятна кухня</h3>
+                <p class="exp-card__text">Барбекю зона и място за големи компании.</p>
+                <span class="exp-card__cta">Виж детайли →</span>
+              </div>
+            </a>
+      
+            <a class="exp-card" href="#amen-pool" data-exp-card="pool"
+               style="--bg:url('img/bryazovo/bryazovo-basein-jacuzzy.webp')">
+              <div class="exp-card__overlay"></div>
+              <div class="exp-card__content">
+                <div class="exp-card__kicker">ЛЯТО И ТИШИНА</div>
+                <h3 class="exp-card__title">Басейн</h3>
+                <p class="exp-card__text">Сезонен басейн за гостите на вилата.</p>
+                <span class="exp-card__cta">Виж детайли →</span>
+              </div>
+            </a>
+      
+            <a class="exp-card" href="#amen-spa" data-exp-card="spa"
+               style="--bg:url('img/bryazovo/brqzovo-jacuzzy.webp')">
+              <div class="exp-card__overlay"></div>
+              <div class="exp-card__content">
+                <div class="exp-card__kicker">RELAX ЗОНА</div>
+                <h3 class="exp-card__title">Джакузи</h3>
+                <p class="exp-card__text">Релакс зона за вечер и почивка.</p>
+                <span class="exp-card__cta">Виж детайли →</span>
+              </div>
+            </a>
+      
+            <a class="exp-card" href="#amen-mehana" data-exp-card="mehana"
+               style="--bg:url('img/bryazovo/brqzovo-meze-kamina.webp')">
+              <div class="exp-card__overlay"></div>
+              <div class="exp-card__content">
+                <div class="exp-card__kicker">УЮТ ПРЕЗ ВСИЧКИ СЕЗОНИ</div>
+                <h3 class="exp-card__title">Механа + камина</h3>
+                <p class="exp-card__text">Вътрешна механа и атмосфера за компания.</p>
+                <span class="exp-card__cta">Виж детайли →</span>
+              </div>
+            </a>
+      
+            <a class="exp-card" href="#amen-kids" data-exp-card="kids"
+               style="--bg:url('img/bryazovo/razhodki.jpg')">
+              <div class="exp-card__overlay"></div>
+              <div class="exp-card__content">
+                <div class="exp-card__kicker">ЗА МАЛКИТЕ ГОСТИ</div>
+                <h3 class="exp-card__title">Детски кът</h3>
+                <p class="exp-card__text">Пространство за игри вътре и вън.</p>
+                <span class="exp-card__cta">Виж детайли →</span>
+              </div>
+            </a>
+      
+          </div>
+      
+          <!-- Detail Panel -->
+          <div class="exp-detail" id="expDetail" aria-label="Детайли за удобства - Брязово">
+      
+            <div class="exp-tabs" role="tablist" aria-label="Табове удобства - Брязово">
+              <button class="exp-tab is-active" type="button" role="tab" aria-selected="true" data-exp-tab="bbq">BBQ</button>
+              <button class="exp-tab" type="button" role="tab" aria-selected="false" data-exp-tab="pool">Басейн</button>
+              <button class="exp-tab" type="button" role="tab" aria-selected="false" data-exp-tab="spa">Джакузи</button>
+              <button class="exp-tab" type="button" role="tab" aria-selected="false" data-exp-tab="mehana">Механа</button>
+              <button class="exp-tab" type="button" role="tab" aria-selected="false" data-exp-tab="kids">Детски кът</button>
+            </div>
+      
+            <div class="exp-panels ">
+      
+              <!-- BBQ -->
+              <article class="exp-panel is-active" role="tabpanel" data-exp-panel="bbq" id="amen-bbq">
+                <div class="exp-panel__grid">
+                  <div class="exp-panel__media">
+                    <img src="img/bryazovo/brqzovo-meze-kamina.webp" alt="Брязово • BBQ зона" />
+                  </div>
+                  <div class="exp-panel__content">
+                    <p class="exp-badge">BBQ + лятна кухня</p>
+                    <h3 class="exp-h">Барбекю зона за компания</h3>
+                    <p class="exp-p">BBQ кът с лятна кухня — удобно за големи компании и дълги вечери.</p>
+      
+                    <ul class="exp-list">
+                      <li><span class="dot"></span> BBQ + лятна кухня</li>
+                      <li><span class="dot"></span> Място за големи групи</li>
+                      <li><span class="dot"></span> Идеално за празници</li>
+                    </ul>
+      
+                    <div class="exp-actions">
+                      <a class="btn btn-light" href="index.html#rezervirai">Запази дати <span class="btn-ic">▶</span></a>
+                      <a class="btn btn-ghost" href="#gallery">Виж снимки</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+      
+              <!-- POOL -->
+              <article class="exp-panel" role="tabpanel" data-exp-panel="pool" id="amen-pool">
+                <div class="exp-panel__grid">
+                  <div class="exp-panel__media">
+                    <img src="img/bryazovo/bryazovo-basein-jacuzzy.webp" alt="Брязово • Басейн" />
+                  </div>
+                  <div class="exp-panel__content">
+                    <p class="exp-badge">Басейн</p>
+                    <h3 class="exp-h">Сезонен басейн за гостите на вилата</h3>
+                    <p class="exp-p">Перфектен за летни дни, прохлада и почивка в двора.</p>
+      
+                    <ul class="exp-list">
+                      <li><span class="dot"></span> Самостоятелен за вилата</li>
+                      <li><span class="dot"></span> Подходящ за семейства</li>
+                      <li><span class="dot"></span> Комбо с BBQ зона</li>
+                    </ul>
+      
+                    <div class="exp-actions">
+                      <a class="btn btn-light" href="index.html#rezervirai">Запази дати <span class="btn-ic">▶</span></a>
+                      <a class="btn btn-ghost" href="#gallery">Виж снимки</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+      
+              <!-- SPA -->
+              <article class="exp-panel" role="tabpanel" data-exp-panel="spa" id="amen-spa">
+                <div class="exp-panel__grid">
+                  <div class="exp-panel__media">
+                    <img src="img/bryazovo/brqzovo-jacuzzy.webp" alt="Брязово • Джакузи" />
+                  </div>
+                  <div class="exp-panel__content">
+                    <p class="exp-badge">Джакузи</p>
+                    <h3 class="exp-h">Релакс зона за вечер</h3>
+                    <p class="exp-p">Джакузи за пълен релакс след разходки и планински ден.</p>
+      
+                    <ul class="exp-list">
+                      <li><span class="dot"></span> Самостоятелно за Брязово</li>
+                      <li><span class="dot"></span> Най-приятно вечер</li>
+                      <li><span class="dot"></span> Комфорт за компания</li>
+                    </ul>
+      
+                    <div class="exp-actions">
+                      <a class="btn btn-light" href="index.html#rezervirai">Запази дати <span class="btn-ic">▶</span></a>
+                      <a class="btn btn-ghost" href="#gallery">Виж снимки</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+      
+              <!-- MEHANA -->
+              <article class="exp-panel" role="tabpanel" data-exp-panel="mehana" id="amen-mehana">
+                <div class="exp-panel__grid">
+                  <div class="exp-panel__media">
+                    <img src="img/bryazovo/brqzovo-meze-kamina.webp" alt="Брязово • Механа" />
+                  </div>
+                  <div class="exp-panel__content">
+                    <p class="exp-badge">Механа + камина</p>
+                    <h3 class="exp-h">Уют през всички сезони</h3>
+                    <p class="exp-p">Механа с кухня и камина — идеална за зимни вечери и дълги разговори.</p>
+      
+                    <ul class="exp-list">
+                      <li><span class="dot"></span> Механа с кухня</li>
+                      <li><span class="dot"></span> Каминa за атмосфера</li>
+                      <li><span class="dot"></span> Удобно за големи компании</li>
+                    </ul>
+      
+                    <div class="exp-actions">
+                      <a class="btn btn-light" href="index.html#rezervirai">Запази дати <span class="btn-ic">▶</span></a>
+                      <a class="btn btn-ghost" href="#gallery">Виж снимки</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+      
+              <!-- KIDS -->
+              <article class="exp-panel" role="tabpanel" data-exp-panel="kids" id="amen-kids">
+                <div class="exp-panel__grid">
+                  <div class="exp-panel__media">
+                    <img src="img/bryazovo/razhodki.jpg" alt="Брязово • Детски кът" />
+                  </div>
+                  <div class="exp-panel__content">
+                    <p class="exp-badge">Детски кът</p>
+                    <h3 class="exp-h">Игри за малките гости</h3>
+                    <p class="exp-p">Детски кът вътре и вън — докато големите релаксират.</p>
+      
+                    <ul class="exp-list">
+                      <li><span class="dot"></span> Пространство за игри</li>
+                      <li><span class="dot"></span> Подходящо за семейства</li>
+                      <li><span class="dot"></span> Спокойствие за всички</li>
+                    </ul>
+      
+                    <div class="exp-actions">
+                      <a class="btn btn-light" href="index.html#rezervirai">Запази дати <span class="btn-ic">▶</span></a>
+                      <a class="btn btn-ghost" href="#gallery">Виж снимки</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+      
+            </div>
+          </div>
+      
+        </div>
+      </section>
+
+
+      <section class="bry-gallery" id="gallery" aria-label="Галерия - Вила Брязово">
+        <div class="container">
+      
+          <header class="section-head">
+            <p class="eyebrow">ГАЛЕРИЯ</p>
+            <h2 class="section-title">Вила Брязово</h2>
+            <p class="section-sub">Кадри от двора, релакс зоната и интериора.</p>
+          </header>
+      
+          <div class="bry-gallery__grid" id="bryGalleryGrid">
+      
+            <!-- ✅ Външни -->
+            <button class="bry-gallery__item" type="button"
+              data-full="img/bryazovo/bryazovo-kushta-za-gosti.webp"
+              aria-label="Отвори снимка: Къща Брязово">
+              <img src="img/bryazovo/bryazovo-kushta-za-gosti.webp" alt="Къща за гости Брязово" loading="lazy">
+            </button>
+      
+            <button class="bry-gallery__item" type="button"
+              data-full="img/bryazovo/brqzovo-gledka-kushta.webp"
+              aria-label="Отвори снимка: Гледка към къщата">
+              <img src="img/bryazovo/brqzovo-gledka-kushta.webp" alt="Гледка към къщата" loading="lazy">
+            </button>
+      
+            <button class="bry-gallery__item" type="button"
+              data-full="img/bryazovo/brqzovo-gledka-ot-terasa.webp"
+              aria-label="Отвори снимка: Гледка от терасата">
+              <img src="img/bryazovo/brqzovo-gledka-ot-terasa.webp" alt="Гледка от терасата" loading="lazy">
+            </button>
+      
+            <button class="bry-gallery__item" type="button"
+              data-full="img/bryazovo/bryazovo-basein-jacuzzy.webp"
+              aria-label="Отвори снимка: Басейн и джакузи">
+              <img src="img/bryazovo/bryazovo-basein-jacuzzy.webp" alt="Басейн и джакузи" loading="lazy">
+            </button>
+      
+            <!-- ✅ Релакс -->
+            <button class="bry-gallery__item" type="button"
+              data-full="img/bryazovo/brqzovo-jacuzzy.webp"
+              aria-label="Отвори снимка: Джакузи">
+              <img src="img/bryazovo/brqzovo-jacuzzy.webp" alt="Джакузи" loading="lazy">
+            </button>
+      
+            <!-- ✅ Интериор -->
+            <button class="bry-gallery__item" type="button"
+              data-full="img/bryazovo/brqzovo-vsekidnevna.webp"
+              aria-label="Отвори снимка: Всекидневна">
+              <img src="img/bryazovo/brqzovo-vsekidnevna.webp" alt="Всекидневна" loading="lazy">
+            </button>
+      
+            <button class="bry-gallery__item" type="button"
+              data-full="img/bryazovo/brqzovo-kuhnq-vsekidnevna.webp"
+              aria-label="Отвори снимка: Кухня и трапезария">
+              <img src="img/bryazovo/brqzovo-kuhnq-vsekidnevna.webp" alt="Кухня и трапезария" loading="lazy">
+            </button>
+      
+            <button class="bry-gallery__item" type="button"
+              data-full="img/bryazovo/brqzovo-masa-kuhnq.webp"
+              aria-label="Отвори снимка: Маса и кухня">
+              <img src="img/bryazovo/brqzovo-masa-kuhnq.webp" alt="Маса и кухня" loading="lazy">
+            </button>
+      
+            <button class="bry-gallery__item" type="button"
+              data-full="img/bryazovo/brqzovo-staq-s-masa.webp"
+              aria-label="Отвори снимка: Стая с маса">
+              <img src="img/bryazovo/brqzovo-staq-s-masa.webp" alt="Стая с маса" loading="lazy">
+            </button>
+      
+            <button class="bry-gallery__item" type="button"
+              data-full="img/bryazovo/brqzovo-spalnq.webp"
+              aria-label="Отвори снимка: Спалня">
+              <img src="img/bryazovo/brqzovo-spalnq.webp" alt="Спалня" loading="lazy">
+            </button>
+      
+            <button class="bry-gallery__item" type="button"
+              data-full="img/bryazovo/brqzovo-wc.webp"
+              aria-label="Отвори снимка: Баня">
+              <img src="img/bryazovo/brqzovo-wc.webp" alt="Баня" loading="lazy">
+            </button>
+      
+            <!-- ✅ Уют -->
+            <button class="bry-gallery__item" type="button"
+              data-full="img/bryazovo/brqzovo-kamina.webp"
+              aria-label="Отвори снимка: Камина">
+              <img src="img/bryazovo/brqzovo-kamina.webp" alt="Камина" loading="lazy">
+            </button>
+      
+            <button class="bry-gallery__item" type="button"
+              data-full="img/bryazovo/brqzovo-meze-kamina.webp"
+              aria-label="Отвори снимка: Мезе пред камината">
+              <img src="img/bryazovo/brqzovo-meze-kamina.webp" alt="Мезе пред камината" loading="lazy">
+            </button>
+      
+          </div>
+        </div>
+      
+        <!-- LIGHTBOX (modal) -->
+        <div class="bry-lightbox" id="bryLightbox" aria-hidden="true">
+            <div class="bry-lightbox__backdrop" data-close></div>
+          
+            <div class="bry-lightbox__dialog" role="dialog" aria-modal="true" aria-label="Галерия снимка">
+              <figure class="bry-lightbox__figure">
+                <button class="bry-lightbox__close" type="button" aria-label="Затвори" data-close>✕</button>
+          
+                <img class="bry-lightbox__img" id="bryLightboxImg" src="" alt="">
+                <figcaption class="bry-lightbox__cap" id="bryLightboxCap"></figcaption>
+              </figure>
+          
+              <button class="bry-lightbox__nav bry-lightbox__nav--prev" type="button" aria-label="Предишна снимка" data-prev>‹</button>
+              <button class="bry-lightbox__nav bry-lightbox__nav--next" type="button" aria-label="Следваща снимка" data-next>›</button>
+            </div>
+          </div>
+      </section>
+
+
+      <!-- =========================
+  BRYAZOVO — INFO / SERVICES / PRICES / TERMS
+  ========================= -->
+
+<section class="section" id="info" aria-label="Информация за Вила Брязово">
+    <div class="container">
+  
+      <header class="section-head">
+        <p class="eyebrow">ВИЛА БРЯЗОВО</p>
+        <h2 class="section-title">Комфорт и пространство за до 15 гости</h2>
+        <p class="section-sub">
+          С. Рибарица, общ. Тетевен. Барбекю с лятна кухня, механа с кухня и просторна веранда с мека мебел.
+          Басейн, джакузи и трапезария с камина — плюс детски кът вътре и вън.
+        </p>
+      </header>
+  
+      <div class="stay-slide__grid">
+        <!-- main info card -->
+        <article class="stay-card2">
+          <p class="stay-badge">ИНФОРМАЦИЯ</p>
+  
+          <ul class="stay-list">
+            <li><strong>Капацитет:</strong> до 15 гости</li>
+            <li><strong>Спални:</strong> 5</li>
+            <li><strong>Кухни:</strong> 2 напълно оборудвани кухни</li>
+            <li><strong>Общи пространства:</strong> вътрешна + външна механа с барбекю</li>
+            <li><strong>Релакс:</strong> басейн + джакузи (май–ноември)</li>
+            <li><strong>За деца:</strong> детски кът (вътре и вън)</li>
+          </ul>
+  
+          <details class="stay-more">
+            <summary class="stay-more__sum">
+              Още информация за Вила „Брязово“
+              <span class="stay-more__ico" aria-hidden="true"></span>
+            </summary>
+  
+            <div class="stay-more__body">
+              <div class="stay-more__cols">
+  
+                <div class="stay-more__col">
+                  <h4 class="stay-more__h">Капацитет и стаи</h4>
+                  <ul class="stay-more__list">
+                    <li><span class="dot"></span> Капацитет до 15 гости</li>
+                    <li><span class="dot"></span> 5 спални</li>
+                    <li><span class="dot"></span> 2 напълно оборудвани кухни</li>
+                  </ul>
+  
+                  <h4 class="stay-more__h">Общи пространства</h4>
+                  <ul class="stay-more__list">
+                    <li><span class="dot"></span> Вътрешна + външна механа</li>
+                    <li><span class="dot"></span> Барбекю с лятна кухня</li>
+                    <li><span class="dot"></span> Камина</li>
+                    <li><span class="dot"></span> Детски кът</li>
+                  </ul>
+                </div>
+  
+                <div class="stay-more__col">
+                  <h4 class="stay-more__h">Релакс</h4>
+                  <ul class="stay-more__list">
+                    <li><span class="dot"></span> Отопляем басейн (май–ноември)</li>
+                    <li><span class="dot"></span> Джакузи</li>
+                    <li><span class="dot"></span> Подходяща за семейни почивки, компании и празници целогодишно</li>
+                  </ul>
+                </div>
+  
+              </div>
+            </div>
+          </details>
+  
+          <div class="stay-ctaRow">
+            <a class="btn btn-light" href="index.html#rezervirai">Запази дати <span class="btn-ic"></span></a>
+            <a class="btn btn-ghost" href="#gallery">Виж снимки</a>
+          </div>
+        </article>
+  
+        <!-- accent card -->
+        <aside class="stay-card2 stay-card2--accent">
+          <div class="stay-quote">
+            <div class="stay-quote__mark">“</div>
+            <p class="stay-quote__text">Брязово — простор, BBQ и релакс за цялата компания.</p>
+            <p class="stay-quote__meta">БАСЕЙН • ДЖАКУЗИ • ЛЯТНА КУХНЯ</p>
+          </div>
+  
+          <div class="stay-facts">
+            <div class="fact">
+              <div class="fact__v">15</div>
+              <div class="fact__l">гости капацитет</div>
+            </div>
+            <div class="fact">
+              <div class="fact__v">GRILL</div>
+              <div class="fact__l">лятна кухня</div>
+            </div>
+            <div class="fact">
+              <div class="fact__v">SPA</div>
+              <div class="fact__l">басейн + джакузи</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+  <!-- =========================
+    BRYAZOVO — SERVICES (quick blocks)
+    ========================= -->
+  
+  <section class="section" id="services" aria-label="Услуги на Вила Брязово">
+    <div class="container">
+  
+      <header class="section-head">
+        <p class="eyebrow">УСЛУГИ</p>
+        <h2 class="section-title">Какво включва престоят</h2>
+        <p class="section-sub">
+          Услуги и пространства, които правят Брязово удобна за големи компании и семейства.
+        </p>
+      </header>
+  
+      <div class="amen-grid" aria-label="Услуги и удобства">
+        <div class="amen"><div class="amen__t">Барбекю</div><div class="amen__p">лятна кухня</div></div>
+        <div class="amen"><div class="amen__t">Механа</div><div class="amen__p">с кухня</div></div>
+        <div class="amen"><div class="amen__t">Веранда</div><div class="amen__p">мека мебел</div></div>
+        <div class="amen"><div class="amen__t">Басейн</div><div class="amen__p">май–ноември</div></div>
+        <div class="amen"><div class="amen__t">Джакузи</div><div class="amen__p">релакс зона</div></div>
+        <div class="amen"><div class="amen__t">Камина</div><div class="amen__p">трапезария</div></div>
+        <div class="amen"><div class="amen__t">Детски кът</div><div class="amen__p">вътре и вън</div></div>
+        <div class="amen"><div class="amen__t">Капацитет</div><div class="amen__p">до 15 гости</div></div>
+      </div>
+  
+      <div class="stay-ctaRow">
+        <a class="btn btn-light" href="index.html#rezervirai">Запитване / Резервация <span class="btn-ic"></span></a>
+        <a class="btn btn-ghost" href="index.html#kontakti">Контакт</a>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+  <!-- =========================
+    BRYAZOVO — PRICES
+    ========================= -->
+  
+  <section class="section" id="prices" aria-label="Цени за Вила Брязово">
+    <div class="container">
+  
+      <header class="section-head">
+        <p class="eyebrow">ЦЕНИ</p>
+        <h2 class="section-title">Цени за настаняване</h2>
+        <p class="section-sub">Цени за нощувка (не важат за празници и специални дати).</p>
+      </header>
+  
+      <div class="price-bubbles">
+        <div class="price-bubble">
+          <div class="tape">ДЕЛНИК</div>
+          <div class="pb-days">Нощувка</div>
+          <div class="pb-price">180€</div>
+          <div class="pb-note">простор за компания</div>
+        </div>
+  
+        <div class="price-bubble price-bubble--best">
+          <div class="tape">УИКЕНД</div>
+          <div class="pb-days">Нощувка</div>
+          <div class="pb-price">230€</div>
+          <div class="pb-note">за големи групи</div>
+        </div>
+  
+        <div class="price-bubble">
+          <div class="tape">КАПАЦИТЕТ</div>
+          <div class="pb-days">До</div>
+          <div class="pb-price">15</div>
+          <div class="pb-note">гости</div>
+        </div>
+      </div>
+  
+      <div class="stay-ctaRow">
+        <a class="btn btn-light" href="index.html#rezervirai">Провери наличност <span class="btn-ic">▶</span></a>
+        <a class="btn btn-ghost" href="index.html#kontakti">Попитай за оферта</a>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+  <!-- =========================
+    BRYAZOVO — TERMS (short + clear)
+    ========================= -->
+  
+  <section class="section" id="terms" aria-label="Условия за Вила Брязово">
+    <div class="container">
+  
+      <header class="section-head">
+        <p class="eyebrow">УСЛОВИЯ</p>
+        <h2 class="section-title">Кратки условия за престой</h2>
+        <p class="section-sub">
+          Условия за спокойствие, чистота и добър престой.
+        </p>
+      </header>
+  
+      <article class="stay-card2">
+        <p class="stay-badge">ПРАВИЛА</p>
+  
+        <ul class="rules">
+          <li><span class="dot"></span> <strong>Настаняване:</strong> от 15:00 ч. до 22:00 ч.</li>
+          <li><span class="dot"></span> <strong>Важно:</strong> информирай ни предварително за часа на пристигане.</li>
+          <li><span class="dot"></span> <strong>Напускане:</strong> от 08:00 ч. до 11:00 ч.</li>
+  
+          <li><span class="dot"></span> <strong>Анулиране / предплащане:</strong> политиките варират според престоя.</li>
+          <li><span class="dot"></span> <strong>Деца:</strong> допускат се деца на всякаква възраст.</li>
+          <li><span class="dot"></span> <strong>Партита/събития:</strong> не са разрешени.</li>
+  
+          <li><span class="dot"></span> Пази чистота в общите части.</li>
+          <li><span class="dot"></span> Ползвай басейн/джакузи според указанията на място.</li>
+          <li><span class="dot"></span> Домашни любимци — по предварителна уговорка.</li>
+          <li><span class="dot"></span> Пушене — само на определени места.</li>
+        </ul>
+  
+        <div class="stay-ctaRow">
+          <a class="btn btn-light" href="index.html#rezervirai">Изпрати запитване <span class="btn-ic"></span></a>
+          <a class="btn btn-ghost" href="index.html#kontakti">Свържи се</a>
+        </div>
+      </article>
+  
+    </div>
+  </section>
+
+
+
+
+
+
+<!-- FOOTER -->
+
+<footer class="villa-footer">
+    <div class="container">
+  
+  <div class="villa-footer__wrap">
+  
+    <!-- BRAND -->
+    <div class="villa-footer__brand">
+  
+      <div class="villa-footer__logo">
+        КЪЩИ ЗА ГОСТИ • РИБАРИЦА
+      </div>
+  
+      <p class="villa-footer__tag">
+        Бели Вит • Гергана • Брязово
+      </p>
+  
+      <p class="villa-footer__desc">
+        Балкански уют, природа и моменти,
+        които остават.
+      </p>
+  
+    </div>
+  
+  
+    <!-- NAVIGATION -->
+    <div class="villa-footer__col">
+  
+      <h4 class="villa-footer__title">
+        Навигация
+      </h4>
+  
+      <a href="index.html#nachalo">Начало</a>
+  
+      <a href="beli-vit.html">Бели Вит</a>
+  
+      <a href="brqzovo.html">Брязово</a>
+  
+      <a href="gergana.html">Гергана</a>
+  
+      <a href="index.html#location">Локация</a>
+  
+      <a href="index.html">Контакти</a>
+  
+      <a href="index.html#rezervirai">Резервирай</a>
+  
+    </div>
+  
+  
+    <!-- CONTACTS -->
+    <div class="villa-footer__col">
+  
+      <h4 class="villa-footer__title">
+        Контакти
+      </h4>
+  
+      <p>
+        <a href="tel:+359899803323">
+          0899 80 33 23
+        </a>
+      </p>
+  
+      <p>
+        <a href="mailto:example@abv.bg">
+          example@abv.bg
+        </a>
+      </p>
+  
+      <p>
+        с. Рибарица, общ. Тетевен
+      </p>
+  
+    </div>
+  
+  
+    <!-- SOCIAL -->
+    <div class="villa-footer__col">
+  
+      <h4 class="villa-footer__title">
+        Социални мрежи
+      </h4>
+  
+      <a href="https://www.instagram.com/three_guest_houses_ribaritsa?igsh=MW54ZnVhbW93eDUzMA=="
+         target="_blank"
+         rel="noopener">
+        Instagram
+      </a>
+  
+      <div class="villa-footer__social-group">
+  
+        <span class="villa-footer__social-label">
+          Facebook
+        </span>
+  
+        <a href="https://www.facebook.com/share/1EPW8GWsVT/"
+           target="_blank"
+           rel="noopener">
+          • Бели Вит
+        </a>
+  
+        <a href="https://www.facebook.com/share/18H3qgbbKt/"
+           target="_blank"
+           rel="noopener">
+          • Гергана
+        </a>
+  
+        <a href="https://www.facebook.com/share/14UyGU2zC7a/"
+           target="_blank"
+           rel="noopener">
+          • Брязово
+        </a>
+  
+      </div>
+  
+    </div>
+  
+  </div>
+  
+  
+  <!-- COPYRIGHT -->
+  <div class="villa-footer__bottom">
+  
+    © <span id="year"></span>
+    Къщи за гости Рибарица • Всички права запазени
+  
+  </div>
+  
+  
+  <!-- DECORATION -->
+  <div class="villa-footer__leaf" aria-hidden="true">
+    <img src="images/leaf-svgrepo-com(1).svg" alt="">
+  </div>
+  
+    </div>
+  </footer>
+
+
+</main>
+<button class="to-top" id="toTopBtn" type="button" aria-label="Върни ме най-горе">
+  ↑
+</button>
+<script src="script.js"></script>
+
+</body>
+</html>

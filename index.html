@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Къщи за гости — Рибарица</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="topbar" aria-label="Навигация">
+    <nav class="nav" aria-label="Основно меню">
+
+
+      <a class="nav__logo" href="#nachalo" aria-label="Къщи за гости Рибарица">
+        <div class="brand-title">КЪЩИ ЗА ГОСТИ </div>
+        <div class="brand-sub">БЕЛИ ВИТ • ГЕРГАНА • БРЯЗОВО </div>
+      </a>
+      
+      <button class="nav__toggle" type="button" aria-label="Отвори меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__links" id="navLinks">
+        <a class="nav__link" href="#nachalo">НАЧАЛО</a>
+
+        <!-- ✅ CHANGED: links to separate pages -->
+        <a class="nav__link" href="beli-vit.html">БЕЛИ ВИТ</a>
+        <a class="nav__link" href="brqzovo.html">БРЯЗОВО</a>
+        <a class="nav__link" href="gergana.html">ГЕРГАНА</a>
+        <a class="nav__link" href="#location">ЛОКАЦИЯ</a>
+        <a class="nav__link" href="#kontakti">КОНТАКТИ</a>
+        <a class="nav__link nav__link--cta" href="#rezervirai">РЕЗЕРВИРАЙ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <!--  -->
+    <section class="hero" id="nachalo" aria-label="Начална секция">
+      <span id="topSentinel" aria-hidden="true"></span>
+      <div class="hero__inner">
+        <div class="brand">
+          <div class="brand__mark" aria-hidden="true">
+            <svg width="160" height="52" viewBox="0 0 200 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 55 L70 20 L100 45 L130 18 L185 55" stroke="#1f2328" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M86 37 L94 28" stroke="#1f2328" stroke-width="4" stroke-linecap="round"/>
+              <path d="M126 28 L140 40" stroke="#1f2328" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+          </div>
+
+          <h1 class="brand__title">
+            <span class="brand__title-main">Къщи за гости</span>
+            <span class="brand__title-sub">РИБАРИЦА</span>
+          </h1>
+        </div>
+
+        <p class="hero__text">
+          Нашите три къщи се намират в село Рибарица,<br>
+          общ. Тетевен, на три различни локации<br>
+          сред зеленина, тишина и спокойствие.
+        </p>
+      </div>
+
+      <div class="hero__fade" aria-hidden="true"></div>
+    </section>
+
+    <!-- CARDS -->
+    <section class="cards" aria-label="Къщи">
+      <div class="cards__wrap">
+        <article class="card" id="beli-vit">
+          <div class="card__media">
+            <img src="images/beli-vit.webp" alt="Къща Бели Вит">
+          </div>
+
+          <div class="card__body">
+            <h3 class="card__title">Бели Вит</h3>
+
+            <ul class="card__list">
+              <li class="card__item">
+                <span class="ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M3 11a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v2H3v-2Zm10 0a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3v2h-8v-2Z"/><path d="M3 15h18v5h-2v-2H5v2H3v-5Z"/></svg>
+                </span>
+                4 спални
+              </li>
+
+              <li class="card__item">
+                <span class="ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M4 19h16v2H4v-2Zm2-3h12v2H6v-2Zm1-11h10l2 7H5l2-7Z"/></svg>
+                </span>
+                тераса
+              </li>
+
+              <li class="card__item">
+                <span class="ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 5c6 0 10 7 10 7s-4 7-10 7S2 12 2 12s4-7 10-7Zm0 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/></svg>
+                </span>
+                чудесна гледка
+              </li>
+            </ul>
+
+            <a class="btn" href="beli-vit.html">Виж къщата</a>
+          </div>
+        </article>
+
+        <article class="card" id="bryazovo">
+          <div class="card__media">
+            <img src="images/brqzovo-gledka-kushta.webp" alt="Къща Брязово">
+          </div>
+
+          <div class="card__body">
+            <h3 class="card__title">Брязово</h3>
+
+            <ul class="card__list">
+              <li class="card__item">
+                <span class="ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M3 11a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v2H3v-2Zm10 0a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3v2h-8v-2Z"/><path d="M3 15h18v5h-2v-2H5v2H3v-5Z"/></svg>
+                </span>
+                3 спални
+              </li>
+
+              <li class="card__item">
+                <span class="ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M7 10h10l-1 7H8l-1-7Z"/><path d="M6 19h12v2H6v-2Z"/><path d="M9 3c0 2-2 2-2 4h2c0-2 2-2 2-4H9Zm6 0c0 2-2 2-2 4h2c0-2 2-2 2-4h-2Z"/></svg>
+                </span>
+                барбекю
+              </li>
+
+              <li class="card__item">
+                <span class="ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 5c6 0 10 7 10 7s-4 7-10 7S2 12 2 12s4-7 10-7Zm0 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/></svg>
+                </span>
+                чудесна гледка
+              </li>
+            </ul>
+
+            <a class="btn" href="brqzovo.html">Виж къщата</a>
+          </div>
+        </article>
+
+        <article class="card" id="gergana">
+          <div class="card__media">
+            <img src="images/gergana-kushta-za-gosti.webp" alt="Къща Гергана">
+          </div>
+
+          <div class="card__body">
+            <h3 class="card__title">Гергана</h3>
+
+            <ul class="card__list">
+              <li class="card__item">
+                <span class="ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M3 11a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v2H3v-2Zm10 0a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3v2h-8v-2Z"/><path d="M3 15h18v5h-2v-2H5v2H3v-5Z"/></svg>
+                </span>
+                2 спални
+              </li>
+
+              <li class="card__item">
+                <span class="ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Z"/>
+                    <path d="M4 21a8 8 0 0 1 16 0H4Z"/>
+                  </svg>
+                </span>
+                веранда
+              </li>
+
+              <li class="card__item">
+                <span class="ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M3 8c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 5 2v2c-2.5 0-2.5-2-5-2s-2.5 2-5 2-2.5-2-5-2-2.5 2-5 2V8Zm0 6c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 5 2v2c-2.5 0-2.5-2-5-2s-2.5 2-5 2-2.5-2-5-2-2.5 2-5 2v-2Z"/></svg>
+                </span>
+                уют и тишина
+              </li>
+            </ul>
+
+            <a class="btn" href="gergana.html">Виж къщата</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+ <!-- CONTACTS -->
+
+  <!-- CONTACT -->
+  <section class="villa-contact" id="kontakti">
+    <div class="container">
+      <div class="villa-contact__wrap">
+        <header class="villa-contact__head">
+          <p class="villa-contact__eyebrow">КОНТАКТИ</p>
+          <h2 class="villa-contact__title">Свържи се с нас</h2>
+          <p class="villa-contact__sub">
+            Пиши или звънни — насреща сме за въпроси, препоръки и резервации.
+          </p>
+        </header>
+
+        <div class="villa-contact__grid">
+          <div class="villa-contact__card villa-contact__card--main">
+            <div class="villa-contact__row">
+              <div class="villa-contact__ic" aria-hidden="true">☎</div>
+              <div>
+                <div class="villa-contact__label">Телефон</div>
+                <a class="villa-contact__link" href="tel:+359899803323">0899 80 33 23</a>
+                <div class="villa-contact__hint">Всеки ден • 09:00–20:00</div>
+              </div>
+            </div>
+
+            <div class="villa-contact__row">
+              <div class="villa-contact__ic" aria-hidden="true">✉</div>
+              <div>
+                <div class="villa-contact__label">Имейл</div>
+                <a class="villa-contact__link" href="mailto:hello@example@abv.bg">example@abv.bg</a>
+                <div class="villa-contact__hint">Отговаряме възможно най-бързо</div>
+              </div>
+            </div>
+
+            <div class="villa-contact__row">
+              <div class="villa-contact__ic" aria-hidden="true">⌂</div>
+              <div>
+                <div class="villa-contact__label">Адрес</div>
+                <div class="villa-contact__text">
+                  с. Рибарица, общ. Тетевен,<br>
+                  България
+                </div>
+                <button class="villa-contact__copy" type="button" id="vvCopyContactAddr">
+                  Копирай адрес
+                </button>
+              </div>
+            </div>
+
+            <div class="villa-contact__divider"></div>
+
+            <div class="villa-contact__small">
+              <div class="villa-contact__smallTitle">Бързи действия</div>
+              <div class="villa-contact__actions">
+                <a class="villa-contact__btn villa-contact__btn--primary" href="#booking">Запитване / Резервация</a>
+                <a class="villa-contact__btn villa-contact__btn--ghost" href="#location">Виж локация</a>
+              </div>
+            </div>
+          </div>
+
+          <aside class="villa-contact__card villa-contact__card--social">
+            <h3 class="villa-contact__socialTitle">Намери ни и тук</h3>
+            <p class="villa-contact__socialSub">
+              Пиши ни в удобно за теб приложение — бързо и лесно.
+            </p>
+
+            <div class="villa-contact__socialGrid">
+              <a class="villa-social"
+                 href="https://www.instagram.com/three_guest_houses_ribaritsa?igsh=MW54ZnVhbW93eDUzMA=="
+                 target="_blank" rel="noopener">
+                <span class="villa-social__ic" aria-hidden="true">◎</span>
+                <span class="villa-social__name">Instagram</span>
+                <span class="villa-social__meta">@three_guest_houses_ribaritsa</span>
+              </a>
+
+              <a class="villa-social" href="#" target="_blank" rel="noopener">
+                <span class="villa-social__ic" aria-hidden="true">f</span>
+                <span class="villa-social__name">Facebook</span>
+                <span class="villa-social__meta">Страницата на вилата</span>
+              </a>
+
+              <a class="villa-social villa-social--wide" href="#" target="_blank" rel="noopener">
+                <span class="villa-social__ic" aria-hidden="true">💬</span>
+                <span class="villa-social__name">Viber </span>
+                <span class="villa-social__meta">Пиши ни директно</span>
+              </a>
+            </div>
+
+            <div class="villa-contact__note">
+              <span class="villa-contact__dot" aria-hidden="true"></span>
+              <p>
+                Ако не си сигурен кое е най-подходящо — просто ни звънни. Ще помогнем с всичко: условия, настаняване,
+                препоръки и детайли за вилите.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- LOCATION -->
+    <section class="villa-loc" id="location">
+      <div class="container">
+        <div class="villa-loc__wrap">
+          <header class="villa-loc__head">
+            <p class="villa-loc__eyebrow">ЛОКАЦИЯ</p>
+            <h2 class="villa-loc__title">Къде се намират вилите</h2>
+            <p class="villa-loc__sub">
+              С. Рибарица, общ. Тетевен — спокойна природа и много места за разходки и преживявания наоколо.
+            </p>
+          </header>
+  
+          <div class="villa-loc__top">
+            <div class="villa-loc__mapcard">
+              <div class="villa-loc__map">
+                <iframe
+                  title="Рибарица - Google Maps"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps?q=Ribaritsa,Bulgaria&z=13&output=embed">
+                </iframe>
+              </div>
+  
+              <div class="villa-loc__addr">
+                <div>
+                  <h3 class="villa-loc__addrTitle">Адреси на вилите</h3>
+                  <p class="villa-loc__addrText">
+                    Избери конкретна локация за навигация:
+                  </p>
+              
+                  <!-- 3 VILLA ADDRESSES -->
+                  <div class="villa-addrgrid" role="list" aria-label="Адреси на вилите">
+                    
+                    <!-- BRYAZOVO -->
+                    <article class="villa-addr" role="listitem">
+                      <div class="villa-addr__top">
+                        <h4 class="villa-addr__name">Къща за гости „Брязово“</h4>
+                       <!--<span class="villa-addr__chip">Вила 3</span>--> 
+                      </div>
+              
+                      <p class="villa-addr__text">
+                        ul. "Georgi Benkovski", 5720 Ribaritsa, Bulgaria
+                      </p>
+              
+                      <div class="villa-addr__actions">
+                        <a class="villa-loc__btn villa-loc__btn--primary villa-addr__btn"
+                           href="https://www.google.com/maps/search/?api=1&query=ul.%20%22Georgi%20Benkovski%22%2C%205720%20Ribaritsa"
+                           target="_blank" rel="noopener">
+                          Google Maps
+                        </a>
+                        <button class="villa-loc__btn villa-loc__btn--ghost villa-addr__btn"
+                                type="button"
+                                data-copy="Къща за гости „Брязово“, ul. &quot;Georgi Benkovski&quot;, 5720 Ribaritsa, Bulgaria">
+                          Копирай адрес
+                        </button>
+                      </div>
+                    </article>
+              
+                    <!-- GERGANA -->
+                    <article class="villa-addr" role="listitem">
+                      <div class="villa-addr__top">
+                        <h4 class="villa-addr__name">Вила „Гергана“</h4>
+                       <!-- <span class="villa-addr__chip">Вила 2</span>  -->
+                      </div>
+              
+                      <p class="villa-addr__text">
+                        ul. "Zahari Stoyanov" 17, 5720 Ribaritsa, Bulgaria
+                      </p>
+              
+                      <div class="villa-addr__actions">
+                        <a class="villa-loc__btn villa-loc__btn--primary villa-addr__btn"
+                           href="https://www.google.com/maps/search/?api=1&query=ul.%20%22Zahari%20Stoyanov%22%2017%2C%205720%20Ribaritsa"
+                           target="_blank" rel="noopener">
+                          Google Maps
+                        </a>
+                        <button class="villa-loc__btn villa-loc__btn--ghost villa-addr__btn"
+                                type="button"
+                                data-copy="Вила „Гергана“, ul. &quot;Zahari Stoyanov&quot; 17, 5720 Ribaritsa, Bulgaria">
+                          Копирай адрес
+                        </button>
+                      </div>
+                    </article>
+              
+                    <!-- BELI VIT -->
+                    <article class="villa-addr" role="listitem">
+                      <div class="villa-addr__top">
+                        <h4 class="villa-addr__name">Къща за гости „Бели Вит“</h4>
+                      <!--  <span class="villa-addr__chip">Вила 1</span>-->
+                      </div>
+              
+                      <p class="villa-addr__text">
+                        ul. "Georgi Benkovski" 362, 5720 Ribaritsa, Bulgaria
+                      </p>
+              
+                      <div class="villa-addr__actions">
+                        <a class="villa-loc__btn villa-loc__btn--primary villa-addr__btn"
+                           href="https://www.google.com/maps/search/?api=1&query=ul.%20%22Georgi%20Benkovski%22%20362%2C%205720%20Ribaritsa"
+                           target="_blank" rel="noopener">
+                          Google Maps
+                        </a>
+                        <button class="villa-loc__btn villa-loc__btn--ghost villa-addr__btn"
+                                type="button"
+                                data-copy="Къща за гости „Бели Вит“, ul. &quot;Georgi Benkovski&quot; 362, 5720 Ribaritsa, Bulgaria">
+                          Копирай адрес
+                        </button>
+                      </div>
+                    </article>
+              
+                  </div>
+                </div>
+              
+                <!-- KEEP your right-side actions if you want, or remove this block -->
+                <div class="villa-loc__actions">
+                  <a class="villa-loc__btn villa-loc__btn--primary"
+                     href="https://www.google.com/maps/search/?api=1&query=Ribaritsa,Bulgaria"
+                     target="_blank" rel="noopener">
+                    Отвори Рибарица
+                  </a>
+                 <!-- <button class="villa-loc__btn villa-loc__btn--ghost" type="button" id="vvCopyAddress">
+                    Копирай общ адрес
+                  </button>-->
+                </div>
+              </div>
+            </div>
+  
+            <aside class="villa-loc__infocard">
+              <h3 class="villa-loc__infoTitle">Бързи ориентири</h3>
+  
+              <ul class="villa-loc__bullets">
+                <li><strong>Паркинг:</strong> на място</li>
+                <li><strong>Достъп:</strong> асфалт до вилите</li>
+                <li><strong>Магазини:</strong> 5–10 мин с кола</li>
+                <li><strong>Природа:</strong> пътеки, гледки, река</li>
+              </ul>
+  
+              <div class="villa-loc__note">
+                <span class="villa-loc__noteDot"></span>
+                <p>
+                  За допълнителна информация относно достъпа и точното местоположение, не се колебайте да се свържете с нас.
+                </p>
+              </div>
+            </aside>
+          </div>
+  
+          <div class="villa-near" id="nearby">
+            <div class="villa-near__bar">
+              <h3 class="villa-near__title">Наблизо — идеи за разходки и места</h3>
+  
+              <div class="villa-near__filters" role="tablist" aria-label="Филтри наблизо">
+                <button class="villa-near__f is-active" type="button" data-near="all" role="tab" aria-selected="true">Всички</button>
+                <button class="villa-near__f" type="button" data-near="sights" role="tab" aria-selected="false">Забележителности</button>
+                <button class="villa-near__f" type="button" data-near="nature" role="tab" aria-selected="false">Природа</button>
+                <button class="villa-near__f" type="button" data-near="food" role="tab" aria-selected="false">Ресторанти</button>
+                <button class="villa-near__f" type="button" data-near="shops" role="tab" aria-selected="false">Магазини</button>
+              </div>
+            </div>
+  
+            <div class="villa-near__grid" id="vvNearGrid" aria-label="Наблизо карти">
+              <!-- JS will render -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-- RESERVE -->
+<section class="villa-book2" id="rezervirai">
+  <div class="container">
+    <div class="villa-book2__wrap">
+      <header class="villa-book2__head">
+        <p class="villa-book2__eyebrow">РЕЗЕРВАЦИЯ</p>
+        <h2 class="villa-book2__title">Планирай своя престой</h2>
+        <p class="villa-book2__sub">
+          Избери дати и ни изпрати запитване. Ще ти потвърдим наличност.
+        </p>
+      </header>
+
+      <form class="villa-book2__form" id="bookingForm2" novalidate>
+        <div class="villa-book2__grid">
+
+          <!-- ✅ НОВО: ЗАДЪЛЖИТЕЛЕН ИЗБОР НА ВИЛА (първо е празно) -->
+          <div class="villa-input">
+            <select name="villa" id="villaSelect" required>
+              <option value="" selected disabled>Избери вила*</option>
+              <option value="beli-vit">Къща Бели Вит</option>
+              <option value="gergana">Вила Гергана</option>
+              <option value="bryazovo">Вила Брязово</option>
+            </select>
+            <label class="villa-label-static">Вила</label>
+          </div>
+
+          <div class="villa-input">
+            <input type="text" name="name" required>
+            <label>Име</label>
+          </div>
+
+          <div class="villa-input">
+            <input type="tel" name="phone" required>
+            <label>Телефон</label>
+          </div>
+
+          <div class="villa-input">
+            <input type="email" name="email" required>
+            <label>Имейл</label>
+          </div>
+
+          <div class="villa-input">
+            <input type="number" name="guests" min="1" required>
+            <label>Брой гости</label>
+          </div>
+
+          <div class="villa-input">
+            <input type="date" name="from" required>
+            <label class="villa-label-static">Дата от</label>
+          </div>
+
+          <div class="villa-input">
+            <input type="date" name="to" required>
+            <label class="villa-label-static">Дата до</label>
+          </div>
+        </div>
+
+        <div class="villa-input villa-input--full">
+          <textarea rows="4" name="message"></textarea>
+          <label>Допълнителна информация</label>
+        </div>
+
+        <div class="villa-captcha">
+          <span>Колко е 1 + 2?</span>
+          <input type="number" id="captcha2" required>
+        </div>
+
+        <button type="submit" class="villa-book2__btn">
+          Изпрати запитване
+        </button>
+
+        <div class="villa-book2__success" id="bookingSuccess2">
+          ✓ Благодарим! Ще се свържем с теб скоро.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="villa-footer">
+  <div class="container">
+
+```
+<div class="villa-footer__wrap">
+
+  <!-- BRAND -->
+  <div class="villa-footer__brand">
+
+    <div class="villa-footer__logo">
+      КЪЩИ ЗА ГОСТИ • РИБАРИЦА
+    </div>
+
+    <p class="villa-footer__tag">
+      Бели Вит • Гергана • Брязово
+    </p>
+
+    <p class="villa-footer__desc">
+      Балкански уют, природа и моменти,
+      които остават.
+    </p>
+
+  </div>
+
+
+  <!-- NAVIGATION -->
+  <div class="villa-footer__col">
+
+    <h4 class="villa-footer__title">
+      Навигация
+    </h4>
+
+    <a href="#nachalo">Начало</a>
+
+    <a href="beli-vit.html">Бели Вит</a>
+
+    <a href="brqzovo.html">Брязово</a>
+
+    <a href="gergana.html">Гергана</a>
+
+    <a href="#lokaciya">Локация</a>
+
+    <a href="#kontakti">Контакти</a>
+
+    <a href="#rezervirai">Резервирай</a>
+
+  </div>
+
+
+  <!-- CONTACTS -->
+  <div class="villa-footer__col">
+
+    <h4 class="villa-footer__title">
+      Контакти
+    </h4>
+
+    <p>
+      <a href="tel:+359899803323">
+        0899 80 33 23
+      </a>
+    </p>
+
+    <p>
+      <a href="mailto:hello@villavilekula.bg">
+        hello@villavilekula.bg
+      </a>
+    </p>
+
+    <p>
+      с. Рибарица, общ. Тетевен
+    </p>
+
+  </div>
+
+
+  <!-- SOCIAL -->
+  <div class="villa-footer__col">
+
+    <h4 class="villa-footer__title">
+      Социални мрежи
+    </h4>
+
+    <a href="https://www.instagram.com/three_guest_houses_ribaritsa?igsh=MW54ZnVhbW93eDUzMA=="
+       target="_blank"
+       rel="noopener">
+      Instagram
+    </a>
+
+    <div class="villa-footer__social-group">
+
+      <span class="villa-footer__social-label">
+        Facebook
+      </span>
+
+      <a href="https://www.facebook.com/share/1EPW8GWsVT/"
+         target="_blank"
+         rel="noopener">
+        • Бели Вит
+      </a>
+
+      <a href="https://www.facebook.com/share/18H3qgbbKt/"
+         target="_blank"
+         rel="noopener">
+        • Гергана
+      </a>
+
+      <a href="https://www.facebook.com/share/14UyGU2zC7a/"
+         target="_blank"
+         rel="noopener">
+        • Брязово
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- COPYRIGHT -->
+<div class="villa-footer__bottom">
+
+  © <span id="year"></span>
+  Къщи за гости Рибарица • Всички права запазени
+
+</div>
+
+
+<!-- DECORATION -->
+<div class="villa-footer__leaf" aria-hidden="true">
+  <img src="images/leaf-svgrepo-com(1).svg" alt="">
+</div>
+```
+
+  </div>
+</footer>
+
+
+  </main>
+  <button class="to-top" id="toTopBtn" type="button" aria-label="Върни ме най-горе">
+    ↑
+  </button>
+<script src="script.js"></script>
+</body>
+</html>

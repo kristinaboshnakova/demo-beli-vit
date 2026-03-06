@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Къщи за гости — Рибарица</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="topbar" aria-label="Навигация">
+    <nav class="nav" aria-label="Основно меню">
+
+      <a class="nav__logo" href="index.html" aria-label="Къщи за гости Рибарица">
+        <div class="brand-title">КЪЩИ ЗА ГОСТИ </div>
+        <div class="brand-sub">БЕЛИ ВИТ • ГЕРГАНА • БРЯЗОВО </div>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-label="Отвори меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__links" id="navLinks">
+        <a class="nav__link" href="index.html">НАЧАЛО</a>
+        <a class="nav__link" href="beli-vit.html">БЕЛИ ВИТ</a>
+        <a class="nav__link" href="brqzovo.html">БРЯЗОВО</a>
+        <a class="nav__link" href="gergana.html">ГЕРГАНА</a>
+        <a class="nav__link" href="index.html#location">ЛОКАЦИЯ</a>
+        <a class="nav__link" href="index.html#kontakti">КОНТАКТИ</a>
+        <a class="nav__link nav__link--cta" href="index.html#rezervirai">РЕЗЕРВИРАЙ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <!-- HERO -->
+    <section class="hero" id="nachalo" aria-label="Начална секция">
+      <span id="topSentinel" aria-hidden="true"></span>
+
+      <div class="hero__inner1">
+        <div class="brand">
+          <div class="brand__mark" aria-hidden="true">
+            <svg width="160" height="52" viewBox="0 0 200 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 55 L70 20 L100 45 L130 18 L185 55" stroke="#1f2328" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M86 37 L94 28" stroke="#1f2328" stroke-width="4" stroke-linecap="round"/>
+              <path d="M126 28 L140 40" stroke="#1f2328" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+          </div>
+
+          <h1 class="brand__title">
+            <span class="brand__title-main">Къща за гости</span>
+            <span class="brand__title-sub">БЕЛИ ВИТ</span>
+          </h1>
+        </div>
+
+        <div class="hero__villaPhoto" aria-hidden="true">
+            <img src="img/belivit/beli-vit.webp" alt="Вила Гергана">
+          </div>
+
+        <p class="hero__text">
+          „Бели Вит“ — простор и уют край реката <br>
+          С. Рибарица, общ. Тетевен.
+        </p>
+      </div>
+
+      <div class="hero__fade1" aria-hidden="true"></div>
+      <a class="btn hero__btn" href="#gallery">Виж галерия</a>
+    </section>
+
+
+    <!-- =========================
+      BELI VIT — AMENITIES (1:1 с Брязово)
+      ========================= -->
+    <section class="section section-exp1" id="amenities" aria-label="Удобства на Къща Бели Вит">
+      <div class="container">
+
+        <div class="exp-grid" aria-label="Категории удобства - Бели Вит">
+
+          <a class="exp-card is-active" href="#amen-bbq" data-exp-card="bbq"
+             style="--bg:url('img/belivit/beli-vit-vunshno-bbq.webp')">
+            <div class="exp-card__overlay"></div>
+            <div class="exp-card__content">
+              <div class="exp-card__kicker">ВЕЧЕРИ НА ЖАР</div>
+              <h3 class="exp-card__title">BBQ край реката</h3>
+              <p class="exp-card__text">Лятно барбекю до водата — прохлада и уют.</p>
+              <span class="exp-card__cta">Виж детайли →</span>
+            </div>
+          </a>
+
+          <a class="exp-card" href="#amen-pool" data-exp-card="pool"
+             style="--bg:url('img/belivit/beli-vit-basein.webp')">
+            <div class="exp-card__overlay"></div>
+            <div class="exp-card__content">
+              <div class="exp-card__kicker">ЛЯТО И ПРОХЛАДА</div>
+              <h3 class="exp-card__title">Сезонен басейн</h3>
+              <p class="exp-card__text">Басейн за летните дни и релакс в двора.</p>
+              <span class="exp-card__cta">Виж детайли →</span>
+            </div>
+          </a>
+
+          <a class="exp-card" href="#amen-spa" data-exp-card="spa"
+             style="--bg:url('img/belivit/beli-vit-jacuzzy.webp')">
+            <div class="exp-card__overlay"></div>
+            <div class="exp-card__content">
+              <div class="exp-card__kicker">RELAX ЗОНА</div>
+              <h3 class="exp-card__title">Джакузи</h3>
+              <p class="exp-card__text">Релакс след разходки и планински ден.</p>
+              <span class="exp-card__cta">Виж детайли →</span>
+            </div>
+          </a>
+
+          <a class="exp-card" href="#amen-mehana" data-exp-card="mehana"
+             style="--bg:url('img/belivit/beli-vit-mehana.webp')">
+            <div class="exp-card__overlay"></div>
+            <div class="exp-card__content">
+              <div class="exp-card__kicker">УЮТ ПРЕЗ СЕЗОНИТЕ</div>
+              <h3 class="exp-card__title">Механа + камина</h3>
+              <p class="exp-card__text">Трапезария с камина и атмосфера за компания.</p>
+              <span class="exp-card__cta">Виж детайли →</span>
+            </div>
+          </a>
+
+          <a class="exp-card" href="#amen-kids" data-exp-card="kids"
+             style="--bg:url('img/belivit/beli-vit-detski-kut.webp')">
+            <div class="exp-card__overlay"></div>
+            <div class="exp-card__content">
+              <div class="exp-card__kicker">ЗА МАЛКИТЕ ГОСТИ</div>
+              <h3 class="exp-card__title">Детски кът</h3>
+              <p class="exp-card__text">Вътрешен и външен детски кът + игри.</p>
+              <span class="exp-card__cta">Виж детайли →</span>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Detail Panel -->
+        <div class="exp-detail" id="expDetail" aria-label="Детайли за удобства - Бели Вит">
+
+          <div class="exp-tabs" role="tablist" aria-label="Табове удобства - Бели Вит">
+            <button class="exp-tab is-active" type="button" role="tab" aria-selected="true" data-exp-tab="bbq">BBQ</button>
+            <button class="exp-tab" type="button" role="tab" aria-selected="false" data-exp-tab="pool">Басейн</button>
+            <button class="exp-tab" type="button" role="tab" aria-selected="false" data-exp-tab="spa">Джакузи</button>
+            <button class="exp-tab" type="button" role="tab" aria-selected="false" data-exp-tab="mehana">Механа</button>
+            <button class="exp-tab" type="button" role="tab" aria-selected="false" data-exp-tab="kids">Деца</button>
+          </div>
+
+          <div class="exp-panels">
+
+            <!-- BBQ -->
+            <article class="exp-panel is-active" role="tabpanel" data-exp-panel="bbq" id="amen-bbq">
+              <div class="exp-panel__grid">
+                <div class="exp-panel__media">
+                  <img src="img/belivit/beli-vit-vunshno-bbq.webp" alt="Бели Вит • BBQ край реката" />
+                </div>
+                <div class="exp-panel__content">
+                  <p class="exp-badge">BBQ край реката</p>
+                  <h3 class="exp-h">Прохлада и уют до водата</h3>
+                  <p class="exp-p">Лятно барбекю край реката — идеално за скара, празници и дълги вечери.</p>
+
+                  <ul class="exp-list">
+                    <li><span class="dot"></span> BBQ зона до реката</li>
+                    <li><span class="dot"></span> Перфектно лятото</li>
+                    <li><span class="dot"></span> Уют за компания</li>
+                  </ul>
+
+                  <div class="exp-actions">
+                    <a class="btn btn-light" href="index.html#rezervirai">Запази дати <span class="btn-ic">▶</span></a>
+                    <a class="btn btn-ghost" href="#gallery">Виж снимки</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- POOL -->
+            <article class="exp-panel" role="tabpanel" data-exp-panel="pool" id="amen-pool">
+              <div class="exp-panel__grid">
+                <div class="exp-panel__media">
+                  <img src="img/belivit/beli-vit-basein.webp" alt="Бели Вит • Сезонен басейн" />
+                </div>
+                <div class="exp-panel__content">
+                  <p class="exp-badge">Сезонен басейн</p>
+                  <h3 class="exp-h">Лято, прохлада и двор</h3>
+                  <p class="exp-p">Сезонен басейн за летни дни и почивка на чист въздух.</p>
+
+                  <ul class="exp-list">
+                    <li><span class="dot"></span> Сезонно ползване</li>
+                    <li><span class="dot"></span> Подходящ за семейства</li>
+                    <li><span class="dot"></span> Комбо с BBQ</li>
+                  </ul>
+
+                  <div class="exp-actions">
+                    <a class="btn btn-light" href="index.html#rezervirai">Запази дати <span class="btn-ic">▶</span></a>
+                    <a class="btn btn-ghost" href="#gallery">Виж снимки</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- SPA -->
+            <article class="exp-panel" role="tabpanel" data-exp-panel="spa" id="amen-spa">
+              <div class="exp-panel__grid">
+                <div class="exp-panel__media">
+                  <img src="img/belivit/beli-vit-jacuzzy.webp" alt="Бели Вит • Джакузи" />
+                </div>
+                <div class="exp-panel__content">
+                  <p class="exp-badge">Джакузи</p>
+                  <h3 class="exp-h">Релакс след разходка</h3>
+                  <p class="exp-p">Джакузи за пълен релакс и спокойствие.</p>
+
+                  <ul class="exp-list">
+                    <li><span class="dot"></span> Релакс зона</li>
+                    <li><span class="dot"></span> Най-приятно вечер</li>
+                    <li><span class="dot"></span> Комфорт за компания</li>
+                  </ul>
+
+                  <div class="exp-actions">
+                    <a class="btn btn-light" href="index.html#rezervirai">Запази дати <span class="btn-ic">▶</span></a>
+                    <a class="btn btn-ghost" href="#gallery">Виж снимки</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- MEHANA -->
+            <article class="exp-panel" role="tabpanel" data-exp-panel="mehana" id="amen-mehana">
+              <div class="exp-panel__grid">
+                <div class="exp-panel__media">
+                  <img src="img/belivit/beli-vit-kamina.webp" alt="Бели Вит • Камина / механа" />
+                </div>
+                <div class="exp-panel__content">
+                  <p class="exp-badge">Механа + камина</p>
+                  <h3 class="exp-h">Уют през сезоните</h3>
+                  <p class="exp-p">Просторна трапезария с камина — за зимни вечери и празници.</p>
+
+                  <ul class="exp-list">
+                    <li><span class="dot"></span> Механа/трапезария</li>
+                    <li><span class="dot"></span> Камина за атмосфера</li>
+                    <li><span class="dot"></span> Удобно за групи</li>
+                  </ul>
+
+                  <div class="exp-actions">
+                    <a class="btn btn-light" href="index.html#rezervirai">Запази дати <span class="btn-ic">▶</span></a>
+                    <a class="btn btn-ghost" href="#gallery">Виж снимки</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- KIDS -->
+            <article class="exp-panel" role="tabpanel" data-exp-panel="kids" id="amen-kids">
+              <div class="exp-panel__grid">
+                <div class="exp-panel__media">
+                  <img src="img/belivit/beli-vit-detski-kut.webp" alt="Бели Вит • Детски кът" />
+                </div>
+                <div class="exp-panel__content">
+                  <p class="exp-badge">Детски кът</p>
+                  <h3 class="exp-h">Забавление за малките</h3>
+                  <p class="exp-p">Вътрешен и външен детски кът за игри и спокойствие за родителите.</p>
+
+                  <ul class="exp-list">
+                    <li><span class="dot"></span> Детски кът</li>
+                    <li><span class="dot"></span> Подходящо за семейства</li>
+                    <li><span class="dot"></span> Просторен двор</li>
+                  </ul>
+
+                  <div class="exp-actions">
+                    <a class="btn btn-light" href="index.html#rezervirai">Запази дати <span class="btn-ic">▶</span></a>
+                    <a class="btn btn-ghost" href="#gallery">Виж снимки</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+      BELI VIT — GALLERY (1:1)
+      ========================= -->
+    <section class="bry-gallery" id="gallery" aria-label="Галерия - Къща Бели Вит">
+      <div class="container">
+
+        <header class="section-head">
+          <p class="eyebrow">ГАЛЕРИЯ</p>
+          <h2 class="section-title">Къща Бели Вит</h2>
+          <p class="section-sub">Кадри от двора, релакс зоната и интериора.</p>
+        </header>
+
+        <div class="bry-gallery__grid" id="bryGalleryGrid">
+
+          <button class="bry-gallery__item" type="button"
+            data-full="img/belivit/beli-vit.webp" aria-label="Отвори снимка: Къща Бели Вит">
+            <img src="img/belivit/beli-vit.webp" alt="Къща Бели Вит" loading="lazy">
+          </button>
+
+          <button class="bry-gallery__item" type="button"
+            data-full="img/belivit/beli-vit-basein.webp" aria-label="Отвори снимка: Сезонен басейн">
+            <img src="img/belivit/beli-vit-basein.webp" alt="Сезонен басейн" loading="lazy">
+          </button>
+
+          <button class="bry-gallery__item" type="button"
+            data-full="img/belivit/beli-vit-vunshno-bbq.webp" aria-label="Отвори снимка: Външно BBQ">
+            <img src="img/belivit/beli-vit-vunshno-bbq.webp" alt="Външно BBQ" loading="lazy">
+          </button>
+
+          <button class="bry-gallery__item" type="button"
+            data-full="img/belivit/beli-vit-jacuzzy.webp" aria-label="Отвори снимка: Джакузи">
+            <img src="img/belivit/beli-vit-jacuzzy.webp" alt="Джакузи" loading="lazy">
+          </button>
+
+          <button class="bry-gallery__item" type="button"
+            data-full="img/belivit/beli-vit-mehana.webp" aria-label="Отвори снимка: Механа">
+            <img src="img/belivit/beli-vit-mehana.webp" alt="Механа" loading="lazy">
+          </button>
+
+          <button class="bry-gallery__item" type="button"
+            data-full="img/belivit/beli-vit-kamina.webp" aria-label="Отвори снимка: Камина">
+            <img src="img/belivit/beli-vit-kamina.webp" alt="Камина" loading="lazy">
+          </button>
+
+          <button class="bry-gallery__item" type="button"
+            data-full="img/belivit/beli-vit-dnevna.webp" aria-label="Отвори снимка: Дневна">
+            <img src="img/belivit/beli-vit-dnevna.webp" alt="Дневна" loading="lazy">
+          </button>
+
+          <button class="bry-gallery__item" type="button"
+            data-full="img/belivit/beli-vit-dnevna-s-kojeni-divani.webp" aria-label="Отвори снимка: Дневна с кожени дивани">
+            <img src="img/belivit/beli-vit-dnevna-s-kojeni-divani.webp" alt="Дневна с кожени дивани" loading="lazy">
+          </button>
+
+          <button class="bry-gallery__item" type="button"
+            data-full="img/belivit/beli-vit-kuhnq.webp" aria-label="Отвори снимка: Кухня">
+            <img src="img/belivit/beli-vit-kuhnq.webp" alt="Кухня" loading="lazy">
+          </button>
+
+          <button class="bry-gallery__item" type="button"
+            data-full="img/belivit/beli-vit-spalnq.webp" aria-label="Отвори снимка: Спалня">
+            <img src="img/belivit/beli-vit-spalnq.webp" alt="Спалня" loading="lazy">
+          </button>
+
+          <button class="bry-gallery__item" type="button"
+            data-full="img/belivit/beli-vit-staia.webp" aria-label="Отвори снимка: Стая">
+            <img src="img/belivit/beli-vit-staia.webp" alt="Стая" loading="lazy">
+          </button>
+
+          <button class="bry-gallery__item" type="button"
+            data-full="img/belivit/beli-vit-vana.webp" aria-label="Отвори снимка: Баня">
+            <img src="img/belivit/beli-vit-vana.webp" alt="Баня" loading="lazy">
+          </button>
+
+          <button class="bry-gallery__item" type="button"
+            data-full="img/belivit/beli-vit-wc.webp" aria-label="Отвори снимка: Баня/WC">
+            <img src="img/belivit/beli-vit-wc.webp" alt="Баня/WC" loading="lazy">
+          </button>
+
+          <button class="bry-gallery__item" type="button"
+            data-full="img/belivit/beli-vit-wc1.webp" aria-label="Отвори снимка: Баня/WC (2)">
+            <img src="img/belivit/beli-vit-wc1.webp" alt="Баня/WC (2)" loading="lazy">
+          </button>
+
+          <button class="bry-gallery__item" type="button"
+            data-full="img/belivit/beli-vit-detski-kut.webp" aria-label="Отвори снимка: Детски кът">
+            <img src="img/belivit/beli-vit-detski-kut.webp" alt="Детски кът" loading="lazy">
+          </button>
+
+          <button class="bry-gallery__item" type="button"
+            data-full="img/belivit/belivit-garden.webp" aria-label="Отвори снимка: Двор">
+            <img src="img/belivit/belivit-garden.webp" alt="Двор" loading="lazy">
+          </button>
+
+          <button class="bry-gallery__item" type="button"
+            data-full="img/belivit/beli-vit-delikates.webp" aria-label="Отвори снимка: Деликатеси">
+            <img src="img/belivit/beli-vit-delikates.webp" alt="Деликатеси" loading="lazy">
+          </button>
+
+          <button class="bry-gallery__item" type="button"
+            data-full="img/belivit/beli-vit-interior.webp" aria-label="Отвори снимка: Интериор">
+            <img src="img/belivit/beli-vit-interior.webp" alt="Интериор" loading="lazy">
+          </button>
+
+        </div>
+      </div>
+
+      <!-- LIGHTBOX (modal) -->
+      <div class="bry-lightbox" id="bryLightbox" aria-hidden="true">
+        <div class="bry-lightbox__backdrop" data-close></div>
+
+        <div class="bry-lightbox__dialog" role="dialog" aria-modal="true" aria-label="Галерия снимка">
+          <figure class="bry-lightbox__figure">
+            <button class="bry-lightbox__close" type="button" aria-label="Затвори" data-close>✕</button>
+
+            <img class="bry-lightbox__img" id="bryLightboxImg" src="" alt="">
+            <figcaption class="bry-lightbox__cap" id="bryLightboxCap"></figcaption>
+          </figure>
+
+          <button class="bry-lightbox__nav bry-lightbox__nav--prev" type="button" aria-label="Предишна снимка" data-prev>‹</button>
+          <button class="bry-lightbox__nav bry-lightbox__nav--next" type="button" aria-label="Следваща снимка" data-next>›</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================
+      BELI VIT — INFO / SERVICES / PRICES / TERMS (1:1 като Брязово)
+      ========================= -->
+    <section class="section" id="info" aria-label="Информация за Къща Бели Вит">
+      <div class="container">
+
+        <header class="section-head">
+          <p class="eyebrow">КЪЩА БЕЛИ ВИТ</p>
+          <h2 class="section-title">„Бели Вит“ — простор и уют край реката</h2>
+          <p class="section-sub">
+            С. Рибарица, общ. Тетевен. Подходяща за до 12 гости — идеална за семейства и компании,
+            които искат тишина, природа и истинска почивка с удобства.
+          </p>
+        </header>
+
+        <div class="stay-slide__grid">
+          <article class="stay-card2">
+            <p class="stay-badge">ИНФОРМАЦИЯ</p>
+
+            <ul class="stay-list">
+              <li><strong>Капацитет:</strong> до 12 гости</li>
+              <li><strong>Спални:</strong> 3</li>
+              <li><strong>Бани:</strong> 2 тоалетни + 2 душа</li>
+              <li><strong>Общи зони:</strong> просторна трапезария с камина, механа</li>
+              <li><strong>Отвън:</strong> лятно барбекю до реката, сезонен басейн</li>
+              <li><strong>Релакс:</strong> джакузи, веранда с гледка към Балкана</li>
+              <li><strong>За деца:</strong> вътрешен и външен детски кът</li>
+            </ul>
+
+            <details class="stay-more">
+              <summary class="stay-more__sum">
+                Още информация за Къща „Бели Вит“
+                <span class="stay-more__ico" aria-hidden="true"></span>
+              </summary>
+
+              <div class="stay-more__body">
+                <div class="stay-more__cols">
+                  <div class="stay-more__col">
+                    <h4 class="stay-more__h">Леглова база</h4>
+                    <ul class="stay-more__list">
+                      <li><span class="dot"></span> 12 места</li>
+                      <li><span class="dot"></span> 3 спални</li>
+                      <li><span class="dot"></span> 2 тоалетни + 2 душа</li>
+                    </ul>
+
+                    <h4 class="stay-more__h">Разпределение на стаите</h4>
+                    <ul class="stay-more__list">
+                      <li><span class="dot"></span> Стая 1: 2 двойни легла</li>
+                      <li><span class="dot"></span> Стая 2: 1 спалня</li>
+                      <li><span class="dot"></span> Стая 3: 1 спалня + разтегателен диван</li>
+                    </ul>
+                  </div>
+
+                  <div class="stay-more__col">
+                    <h4 class="stay-more__h">За преживяване</h4>
+                    <ul class="stay-more__list">
+                      <li><span class="dot"></span> Река до къщата – прохлада през лятото</li>
+                      <li><span class="dot"></span> Зелен двор + BBQ (идеално и за риболов)</li>
+                      <li><span class="dot"></span> Детски кът + колела</li>
+                      <li><span class="dot"></span> Сезонен басейн</li>
+                      <li><span class="dot"></span> Домашни любимци – добре дошли</li>
+                      <li><span class="dot"></span> Видеонаблюдение в двора</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </details>
+
+            <div class="stay-ctaRow">
+              <a class="btn btn-light" href="index.html#rezervirai">Запази дати <span class="btn-ic"></span></a>
+              <a class="btn btn-ghost" href="#gallery">Виж снимки</a>
+            </div>
+          </article>
+
+          <aside class="stay-card2 stay-card2--accent">
+            <div class="stay-quote">
+              <div class="stay-quote__mark">“</div>
+              <p class="stay-quote__text">Бели Вит — камина, река и Балканът пред теб.</p>
+              <p class="stay-quote__meta">БАСЕЙН • ДЖАКУЗИ • BBQ</p>
+            </div>
+
+            <div class="stay-facts">
+              <div class="fact">
+                <div class="fact__v">12</div>
+                <div class="fact__l">гости капацитет</div>
+              </div>
+              <div class="fact">
+                <div class="fact__v">РЕКА</div>
+                <div class="fact__l">BBQ до водата</div>
+              </div>
+              <div class="fact">
+                <div class="fact__v">БАСЕЙН</div>
+                <div class="fact__l">сезонен</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="section" id="services" aria-label="Услуги на Къща Бели Вит">
+      <div class="container">
+
+        <header class="section-head">
+          <p class="eyebrow">УСЛУГИ</p>
+          <h2 class="section-title">Какво включва престоят</h2>
+          <p class="section-sub">Услуги и удобства за комфортен престой до реката.</p>
+        </header>
+
+        <div class="amen-grid" aria-label="Услуги и удобства">
+          <div class="amen"><div class="amen__t">Капацитет</div><div class="amen__p">до 12 гости</div></div>
+          <div class="amen"><div class="amen__t">Басейн</div><div class="amen__p">сезонен</div></div>
+          <div class="amen"><div class="amen__t">Джакузи</div><div class="amen__p">релакс зона</div></div>
+          <div class="amen"><div class="amen__t">BBQ</div><div class="amen__p">край реката</div></div>
+          <div class="amen"><div class="amen__t">Камина</div><div class="amen__p">трапезария</div></div>
+          <div class="amen"><div class="amen__t">Механа</div><div class="amen__p">просторна</div></div>
+          <div class="amen"><div class="amen__t">Детски кът</div><div class="amen__p">вътре и вън</div></div>
+          <div class="amen"><div class="amen__t">Домашни любимци</div><div class="amen__p">добре дошли</div></div>
+        </div>
+
+        <div class="stay-ctaRow">
+          <a class="btn btn-light" href="index.html#rezervirai">Запитване / Резервация <span class="btn-ic"></span></a>
+          <a class="btn btn-ghost" href="index.html#kontakti">Контакт</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="section" id="prices" aria-label="Цени за Къща Бели Вит">
+      <div class="container">
+
+        <header class="section-head">
+          <p class="eyebrow">ЦЕНИ</p>
+          <h2 class="section-title">Цени за настаняване</h2>
+          <p class="section-sub">Цени за нощувка (не важат за празници и специални дати).</p>
+        </header>
+
+        <div class="price-bubbles">
+          <div class="price-bubble">
+            <div class="tape">ДЕЛНИК</div>
+            <div class="pb-days">Нощувка</div>
+            <div class="pb-price">180€</div>
+            <div class="pb-note">спокойни дни в Балкана</div>
+          </div>
+
+          <div class="price-bubble price-bubble--best">
+            <div class="tape">УИКЕНД</div>
+            <div class="pb-days">Нощувка</div>
+            <div class="pb-price">230€</div>
+            <div class="pb-note">най-търсените дати</div>
+          </div>
+
+          <div class="price-bubble">
+            <div class="tape">КАПАЦИТЕТ</div>
+            <div class="pb-days">До</div>
+            <div class="pb-price">12</div>
+            <div class="pb-note">гости</div>
+          </div>
+        </div>
+
+        <div class="stay-ctaRow">
+          <a class="btn btn-light" href="index.html#rezervirai">Провери наличност <span class="btn-ic">▶</span></a>
+          <a class="btn btn-ghost" href="index.html#kontakti">Попитай за оферта</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="section" id="terms" aria-label="Условия за Къща Бели Вит">
+      <div class="container">
+
+        <header class="section-head">
+          <p class="eyebrow">УСЛОВИЯ</p>
+          <h2 class="section-title">Кратки условия за престой</h2>
+          <p class="section-sub">Условия за спокойствие, чистота и добър престой.</p>
+        </header>
+
+        <article class="stay-card2">
+          <p class="stay-badge">ПРАВИЛА</p>
+
+          <ul class="rules">
+            <li><span class="dot"></span> <strong>Настаняване:</strong> от 15:00 ч. до 22:00 ч.</li>
+            <li><span class="dot"></span> <strong>Напускане:</strong> от 08:00 ч. до 11:00 ч.</li>
+            <li><span class="dot"></span> Пази чистота в общите части.</li>
+            <li><span class="dot"></span> Ползвай басейн/джакузи според указанията на място.</li>
+            <li><span class="dot"></span> Домашни любимци — добре дошли (по уговорка).</li>
+            <li><span class="dot"></span> Пушене — само на определени места.</li>
+          </ul>
+
+          <div class="stay-ctaRow">
+            <a class="btn btn-light" href="index.html#rezervirai">Изпрати запитване <span class="btn-ic"></span></a>
+            <a class="btn btn-ghost" href="index.html#kontakti">Свържи се</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="villa-footer">
+      <div class="container">
+
+        <div class="villa-footer__wrap">
+
+          <!-- BRAND -->
+          <div class="villa-footer__brand">
+            <div class="villa-footer__logo">КЪЩИ ЗА ГОСТИ • РИБАРИЦА</div>
+            <p class="villa-footer__tag">Бели Вит • Гергана • Брязово</p>
+            <p class="villa-footer__desc">
+              Балкански уют, природа и моменти,
+              които остават.
+            </p>
+          </div>
+
+          <!-- NAVIGATION -->
+          <div class="villa-footer__col">
+            <h4 class="villa-footer__title">Навигация</h4>
+            <a href="index.html#nachalo">Начало</a>
+            <a href="beli-vit.html">Бели Вит</a>
+            <a href="brqzovo.html">Брязово</a>
+            <a href="gergana.html">Гергана</a>
+            <a href="index.html#location">Локация</a>
+            <a href="index.html#kontakti">Контакти</a>
+            <a href="index.html#rezervirai">Резервирай</a>
+          </div>
+
+          <!-- CONTACTS -->
+          <div class="villa-footer__col">
+            <h4 class="villa-footer__title">Контакти</h4>
+            <p><a href="tel:+359899803323">0899 80 33 23</a></p>
+            <p><a href="mailto:example@abv.bg">example@abv.bg</a></p>
+            <p>с. Рибарица, общ. Тетевен</p>
+          </div>
+
+          <!-- SOCIAL -->
+          <div class="villa-footer__col">
+            <h4 class="villa-footer__title">Социални мрежи</h4>
+            <a href="https://www.instagram.com/three_guest_houses_ribaritsa?igsh=MW54ZnVhbW93eDUzMA==" target="_blank" rel="noopener">
+              Instagram
+            </a>
+
+            <div class="villa-footer__social-group">
+              <span class="villa-footer__social-label">Facebook</span>
+              <a href="https://www.facebook.com/share/1EPW8GWsVT/" target="_blank" rel="noopener">• Бели Вит</a>
+              <a href="https://www.facebook.com/share/18H3qgbbKt/" target="_blank" rel="noopener">• Гергана</a>
+              <a href="https://www.facebook.com/share/14UyGU2zC7a/" target="_blank" rel="noopener">• Брязово</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="villa-footer__bottom">
+          © <span id="year"></span>
+          Къщи за гости Рибарица • Всички права запазени
+        </div>
+
+        <!-- DECORATION -->
+        <div class="villa-footer__leaf" aria-hidden="true">
+          <img src="images/leaf-svgrepo-com(1).svg" alt="">
+        </div>
+
+      </div>
+    </footer>
+
+  </main>
+
+  <button class="to-top" id="toTopBtn" type="button" aria-label="Върни ме най-горе">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
